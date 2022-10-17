@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>1 Bit Exam Test</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="col more-info">
+            <div class="content">
+                <h2>More Info</h2>
+                <a class="button">Click for more info</a>
+            </div>
+            <div class="background"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="col offices">
+            <div class="content">
+                <h2>Offices</h2>
+                <a class="button">Check our offices</a>
+            </div>
+            <div class="background"></div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        document.querySelectorAll('.button').forEach((item) => {
+            item.addEventListener('click', (event) => {
+                alert('cta clicked');
+            });
+        });
+        event.preventDefault();
+    });
+</script>
